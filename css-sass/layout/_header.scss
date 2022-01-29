@@ -8,12 +8,11 @@ header {
   display: flex;
   justify-content: space-between;
   background-color: $bg-color;
-  height: 3.27rem;
-  overflow: hidden;
+  height: $header-height;
 }
 
 .logo {
-  margin: 0 0 0 5%;
+  margin-left: $left-margin;
   height: $header-height;
   padding: 0;
   position: relative;
@@ -27,7 +26,7 @@ header {
     margin: 0;
     display: inline-block;
     line-height: $header-height;
-    font-size: 1.026rem;
+    font-size: $logo-size;
   }
 }
 
@@ -42,7 +41,6 @@ header {
 
   &__item {
     display: inline-block;
-    // height: $header-height;
     line-height: $header-height;
     padding: 0 0.5vw;
   }
@@ -52,7 +50,6 @@ header {
     text-decoration: none;
     color: $primary;
     font-size: 0.875rem;
-    // font-weight: 600;
     padding: 5px 0;
   }
 
