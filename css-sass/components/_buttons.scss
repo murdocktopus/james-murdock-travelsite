@@ -1,0 +1,22 @@
+@use "../abstracts/variables" as *;
+@use "../core/reset" as *;
+
+.button {
+  background-color: $accent;
+  color: $bg-color;
+  font-size: 1.313rem;
+  font-weight: 400;
+  height: 60px;
+  width: 180px;
+
+  //   &__link {
+  //     display: flex;
+  //     position: relative;
+  //   }
+  // }
+  //   &__border-container {
+
+  //     left: 10.8%;
+  //     top: 50%;
+  //   }
+}

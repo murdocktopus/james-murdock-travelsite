@@ -1,1 +1,54 @@
 @use "../abstracts" as *;
+@use "../abstracts/mixins" as *;
+@use "../components/buttons" as *;
+@use "../core/index" as *;
+
+.hero-section {
+  background-color: $secondary;
+  margin: 0;
+  height: 30rem;
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: nowrap;
+
+  &__left {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 50%;
+  }
+
+  &__title {
+    margin: 0 10%;
+    justify-content: center;
+    align-content: center;
+    max-width: 380px;
+  }
+
+  &__copy {
+    display: flex;
+    justify-content: space-between;
+    width: 580px;
+    margin: 0 10%;
+    padding: 1rem 0 0.8rem 0;
+  }
+
+  &__right {
+    display: flex;
+    margin: 0;
+    width: 50%;
+    padding: 0.75rem 0;
+    overflow: hidden;
+    position: relative;
+  }
+
+  &__img {
+    height: 22rem;
+    display: block;
+    margin: auto;
+    position: absolute;
+    left: 53.1%;
+    transform: translateX(-50%) translateY(-50%);
+    top: 50%;
+  }
+}
