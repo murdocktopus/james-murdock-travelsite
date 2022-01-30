@@ -9,28 +9,30 @@
   </head>
   <body>
     <header class="header">
-      <div class="logo">
-        <a class="logo__link" href="/index.html">
-          <h1 class="logo__text">Travel Site</h1></a
-        >
-      </div>
-      <nav class="nav">
-        <ul class="nav__list">
-          <li class="nav__item">
-            <a href="/index.html" class="nav__link nav__link--underline"
-              >Home</a
-            >
-          </li>
-          <li class="nav__item">
-            <a href="./pages/hawaii.html" class="nav__link">Hawaii</a>
-          </li>
-          <li class="nav__item">
-            <a href="./pages/iceland.html" class="nav__link">Iceland</a>
-          </li>
-          <li class="nav__item">
-            <a href="./pages/greece.html" class="nav__link">Greece</a>
-          </li>
-        </ul>
+      <div class="nav-bar">
+        <div class="logo">
+          <a class="logo__link" href="/index.html">
+            <h1 class="logo__text">Travel Site</h1></a
+          >
+        </div>
+        <nav class="nav">
+          <ul class="nav__list">
+            <li class="nav__item">
+              <a href="/index.html" class="nav__link nav__link--underline"
+                >Home</a
+              >
+            </li>
+            <li class="nav__item">
+              <a href="./pages/hawaii.html" class="nav__link">Hawaii</a>
+            </li>
+            <li class="nav__item">
+              <a href="./pages/iceland.html" class="nav__link">Iceland</a>
+            </li>
+            <li class="nav__item">
+              <a href="./pages/greece.html" class="nav__link">Greece</a>
+            </li>
+          </ul>
+        </div>
       </nav>
     </header>
     <!-- header end -->
@@ -44,7 +46,7 @@
           Don't let your dreams be just dreams. Experience the world by booking
           a vacation with us now.
         </p>
-        <a class="button__link" href="Pages/menu.html">
+        <a class="button__link" href="/index.html#recommendations">
           <button class="button">Get started</button>
         </a>
       </div>
@@ -58,34 +60,83 @@
     </section>
     <!-- hero end -->
     <!-- recommendations start -->
-    <section class="reco-section">
+    <section class="reco-section" id="recommendations">
       <h2 class="reco-section__title">Recommendations</h2>
       <div class="reco-card-container">
         <div class="reco-card">
-          <img
+          <a href="./pages/hawaii.html" class="reco-card__link"><img
             class="reco-card__img"
             src="./assets/images/hawaii.jpg"
             alt="#"
-          />
+          /></a>
           <h3 class="reco-card__title">Hawaii</h3>
         </div>
         <div class="reco-card">
-          <img
+          <a href="./pages/iceland.html" class="reco-card__link"><img
             class="reco-card__img"
             src="./assets/images/iceland.jpg"
             alt="#"
-          />
+          /></a>
           <h3 class="reco-card__title">Iceland</h3>
         </div>
         <div class="reco-card">
-          <img
+          <a href="./pages/greece.html" class="reco-card__link"><img
             class="reco-card__img"
             src="./assets/images/greece.jpg"
             alt="#"
-          />
+          /></a>
           <h3 class="reco-card__title">Greece</h3>
         </div>
       </div>
     </section>
+    <!-- end of reco section -->
+    <!-- beginning of footer -->
+    <footer class="footer">
+      <div class="footer__div">
+        <h3 class="footer__title">Contact</h3>
+        <p class="footer__copy">EMAIL</p>
+        <a href="mailto:info@travelsite.com" class="footer__link"
+          >info@travelsite.com</a
+        >
+      </div>
+      <div class="footer__div">
+        <h3 class="footer__title">Hours</h3>
+        <div class="footer__hours-container">
+          <div class="footer__hours-column">
+            <p class="footer__copy">MONDAY - FRIDAY</p>
+            <p class="footer__hours">9:00 AM - 5:00 PM</p>
+          </div>
+          <div class="footer__hours-column">
+            <p class="footer__copy">SATURDAY</p>
+            <p class="footer__hours">10:00 AM - 4:00 PM</p>
+          </div>
+          <div class="footer__hours-column">
+            <p class="footer__copy">SUNDAY</p>
+            <p class="footer__hours">Closed</p>
+          </div>
+        </div>
+      </div>
+      <div class="footer__div">
+        <h3 class="footer__title">Social</h3>
+        <a class="icon" href="https://www.instagram.com"
+          ><img
+            class="icon__img"
+            src="./assets/images/icon-instagram.png"
+            alt="instagram"
+        /></a>
+        <a class="icon" href="https://www.facebook.com"
+          ><img
+            class="icon__img"
+            src="./assets/images/icon-facebook.png"
+            alt="facebook"
+        /></a>
+        <a class="icon" href="https://www.twitter.com"
+          ><img
+            class="icon__img"
+            src="./assets/images/icon-twitter.png"
+            alt="twitter"
+        /></a>
+      </div>
+    </footer>
   </body>
 </html>
