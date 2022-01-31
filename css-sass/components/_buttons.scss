@@ -1,23 +1,43 @@
 @use "../abstracts/variables" as *;
 @use "../core/reset" as *;
 
+// .button {
+//   background-color: $accent;
+//   color: $bg-color;
+//   font-size: 1rem;
+//   font-weight: 400;
+//   width: stretch;
+//   height: stretch;
+//   border-radius: 1.563rem;
+//   display: inline-block;
+//   cursor: pointer;
+//   border: none;
+
+//   &:hover {
+//     opacity: 0.5;
+//     transition: 0.25s;
+//     border: 0.1rem solid rgba(51, 85, 118, 0.6);
+//   }
+// }
 .button {
+  display: flex;
+  width: 9.875rem;
+  height: 2.25rem;
+  margin-left: $left-margin;
+  margin-top: 0.875rem;
   background-color: $accent;
   color: $bg-color;
   font-size: 1rem;
   font-weight: 400;
-  width: stretch;
-  height: stretch;
   border-radius: 1.563rem;
-  display: inline-block;
-  cursor: pointer;
-  border: none;
+  flex-direction: column;
+  text-decoration: none;
+  text-align: center;
+  justify-content: center;
 
-  &__link {
-    display: inline-block;
-    width: 9.875rem;
-    height: 2.25rem;
-    margin-left: $left-margin;
-    margin-top: 0.875rem;
+  &:hover {
+    opacity: 0.6;
+    transition: 0.25s;
+    border: 0.1rem solid rgba(51, 85, 118, 0.6);
   }
 }
