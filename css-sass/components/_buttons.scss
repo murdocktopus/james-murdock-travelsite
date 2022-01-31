@@ -4,20 +4,20 @@
 .button {
   background-color: $accent;
   color: $bg-color;
-  font-size: 16px;
+  font-size: 1rem;
   font-weight: 400;
   width: stretch;
   height: stretch;
-  border-radius: 25px;
+  border-radius: 1.563rem;
   display: inline-block;
   cursor: pointer;
   border: none;
 
   &__link {
     display: inline-block;
-    width: 158px;
-    height: 36px;
+    width: 9.875rem;
+    height: 2.25rem;
     margin-left: $left-margin;
-    margin-top: 14px;
+    margin-top: 0.875rem;
   }
 }

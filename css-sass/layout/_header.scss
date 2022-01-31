@@ -2,7 +2,7 @@
 
 @use "../abstracts/mixins" as *;
 @use "../abstracts/variables" as *;
-@use "../core/index" as *;
+@use "../core/reset" as *;
 
 header {
   position: relative;
@@ -62,10 +62,10 @@ header {
     text-decoration: none;
     color: $primary;
     font-size: 0.875rem;
-    padding: 5px 0;
+    padding: 0.313rem 0;
   }
 
   &__link--underline {
-    border-bottom: 3.2px solid $accent;
+    border-bottom: 0.2rem solid $accent;
   }
 }

@@ -1,0 +1,107 @@
+// pages/_index.scss
+
+@use "../abstracts/variables" as *;
+@use "../abstracts/mixins" as *;
+@use "../components/buttons" as *;
+@use "../core/reset" as *;
+
+.destination-section {
+  overflow: hidden;
+}
+
+.destination-hero {
+  height: 42.5rem;
+  padding: 3.27rem 0 0 0;
+  background-position: 50% 47.5%;
+  background-size: $site-width 130rem;
+
+  &--hawaii {
+    background-image: url(../../assets/images/hawaii.jpg);
+  }
+
+  &--iceland {
+    background-image: url(../../assets/images/iceland.jpg);
+  }
+
+  &--greece {
+    background-image: url(../../assets/images/greece.jpg);
+  }
+
+  &__title {
+    color: $bg-color;
+    font-size: 4.188rem;
+    margin: 3.5rem 5.75rem;
+    display: inline-block;
+  }
+
+  &__cards {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    height: 37.5rem;
+  }
+}
+
+.destination-card {
+  width: 15.9rem;
+  height: 23.5rem;
+  border-radius: 0.313rem;
+  box-shadow: 0.25rem 0 0.25rem rgba(0, 0, 0, 0.2);
+  margin: 0 1.3vw 5rem 1.3vw;
+  overflow: hidden;
+  border: 0.063rem solid rgba(0, 0, 0, 0.2);
+  background-color: $bg-color;
+  display: flex;
+  flex-direction: column;
+}
+
+.card-item {
+  display: inline-block;
+  margin: 0.5rem auto;
+  background-color: $secondary;
+  width: 13rem;
+  height: 3rem;
+
+  &__text {
+    display: block;
+    text-align: center;
+
+    &--title {
+      border-bottom: 0.313rem solid black;
+    }
+  }
+
+  &--title {
+    background-color: $bg-color;
+    font-weight: 800;
+  }
+}
+
+.card-list {
+  margin: 0;
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  width: 100%;
+  height: 23.5rem;
+  padding: 0;
+}
+
+.card-list-item {
+  margin: 0.5rem auto;
+  height: 3rem;
+  width: 13rem;
+  text-align: center;
+  background-color: $secondary;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  &--title {
+    background-color: $bg-color;
+    border-bottom: 0.313rem solid black;
+    height: 1.5rem;
+    margin: 1.5rem auto 1rem auto;
+  }
+}

@@ -1,8 +1,4 @@
 * {
-  border: 0.001px dashed rgba(0, 0, 0, 0.5);
-}
-
-* {
   box-sizing: border-box;
 }
 
@@ -25,7 +21,7 @@ a {
 .button {
   background-color: #db7a4e;
   color: #ffffff;
-  font-size: 16px;
+  font-size: 1rem;
   font-weight: 400;
   width: -webkit-fill-available;
   width: -moz-available;
@@ -33,17 +29,17 @@ a {
   height: -webkit-fill-available;
   height: -moz-available;
   height: stretch;
-  border-radius: 25px;
+  border-radius: 1.563rem;
   display: inline-block;
   cursor: pointer;
   border: none;
 }
 .button__link {
   display: inline-block;
-  width: 158px;
-  height: 36px;
+  width: 9.875rem;
+  height: 2.25rem;
   margin-left: 6.3vw;
-  margin-top: 14px;
+  margin-top: 0.875rem;
 }
 
 header {
@@ -106,10 +102,10 @@ header {
   text-decoration: none;
   color: #335576;
   font-size: 0.875rem;
-  padding: 5px 0;
+  padding: 0.313rem 0;
 }
 .nav__link--underline {
-  border-bottom: 3.2px solid #db7a4e;
+  border-bottom: 0.2rem solid #db7a4e;
 }
 
 .footer {
@@ -126,7 +122,7 @@ header {
 .footer__title {
   padding: 0 0.9vw;
   color: #335576;
-  font-size: 22px;
+  font-size: 1.375rem;
 }
 .footer__hours-container {
   display: flex;
@@ -135,7 +131,7 @@ header {
 .footer__copy {
   color: #db7a4e;
   padding: 0 0.9vw;
-  font-size: 10px;
+  font-size: 0.625rem;
   text-align: left;
   margin: 0 0 0.5rem 0;
 }
@@ -143,21 +139,21 @@ header {
   color: #335576;
   text-decoration: none;
   padding: 0 0.9vw;
-  font-size: 14px;
+  font-size: 0.875rem;
   margin: 0;
   text-align: left;
 }
 .footer__hours {
-  padding: 0 0.9vw;
-  font-size: 14px;
-  margin: 10.25px 0 0 0;
+  padding: 0.1rem 0.9vw 0 0.9vw;
+  font-size: 0.875rem;
+  margin: 0.563rem 0 0 0;
   text-align: left;
   color: #335576;
 }
 
 .icon__img {
-  height: 24px;
-  margin: 15px 0.85vw;
+  height: 1.5rem;
+  margin: 0.9rem 0.85vw;
 }
 
 .destination-section {
@@ -165,15 +161,23 @@ header {
 }
 
 .destination-hero {
-  background-image: url(../../assets/images/hawaii.jpg);
   height: 42.5rem;
   padding: 3.27rem 0 0 0;
   background-position: 50% 47.5%;
-  background-size: 1280px 130rem;
+  background-size: 80rem 130rem;
+}
+.destination-hero--hawaii {
+  background-image: url(../../assets/images/hawaii.jpg);
+}
+.destination-hero--iceland {
+  background-image: url(../../assets/images/iceland.jpg);
+}
+.destination-hero--greece {
+  background-image: url(../../assets/images/greece.jpg);
 }
 .destination-hero__title {
   color: #ffffff;
-  font-size: 67px;
+  font-size: 4.188rem;
   margin: 3.5rem 5.75rem;
   display: inline-block;
 }
@@ -187,52 +191,113 @@ header {
 .destination-card {
   width: 15.9rem;
   height: 23.5rem;
-  border-radius: 5px;
-  box-shadow: 4px 0px 4px rgba(0, 0, 0, 0.2);
+  border-radius: 0.313rem;
+  box-shadow: 0.25rem 0 0.25rem rgba(0, 0, 0, 0.2);
   margin: 0 1.3vw 5rem 1.3vw;
   overflow: hidden;
-  border: 1px solid rgba(0, 0, 0, 0.2);
+  border: 0.063rem solid rgba(0, 0, 0, 0.2);
   background-color: #ffffff;
+  display: flex;
+  flex-direction: column;
+}
+
+.card-item {
   display: inline-block;
+  margin: 0.5rem auto;
+  background-color: #fefaf5;
+  width: 13rem;
+  height: 3rem;
+}
+.card-item__text {
+  display: block;
+  text-align: center;
+}
+.card-item__text--title {
+  border-bottom: 0.313rem solid black;
+}
+.card-item--title {
+  background-color: #ffffff;
+  font-weight: 800;
+}
+
+.card-list {
+  margin: 0;
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  width: 100%;
+  height: 23.5rem;
+  padding: 0;
+}
+
+.card-list-item {
+  margin: 0.5rem auto;
+  height: 3rem;
+  width: 13rem;
+  text-align: center;
+  background-color: #fefaf5;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.card-list-item--title {
+  background-color: #ffffff;
+  border-bottom: 0.313rem solid black;
+  height: 1.5rem;
+  margin: 1.5rem auto 1rem auto;
 }
 
 .hero-section {
   background-color: #fefaf5;
   margin: 0;
-  height: 33.27rem;
+  min-height: 33.27rem;
+  max-height: -webkit-fit-content;
+  max-height: -moz-fit-content;
+  max-height: fit-content;
   display: flex;
   justify-content: space-around;
   flex-wrap: wrap;
-  padding: 0 0.08rem 1.2rem 0;
+  padding: 3.27rem 0.08rem 1.2rem 0;
 }
 .hero-section__left {
-  width: 50%;
+  max-width: 50%;
+  min-width: 15rem;
+  min-height: 33.27rem;
+  max-height: -webkit-fit-content;
+  max-height: -moz-fit-content;
+  max-height: fit-content;
 }
 .hero-section__title {
   color: #335576;
   margin-left: 6.3vw;
-  max-width: 380px;
-  margin-top: 100px;
-  font-size: 36px;
-  max-width: 500px;
+  min-width: 15.5rem;
+  margin-top: 6.25rem;
+  font-size: 2.25rem;
+  max-width: 31.25rem;
 }
 .hero-section__copy {
-  max-width: 580px;
+  max-width: 36.25rem;
+  min-width: 5rem;
   margin-left: 6.3vw;
-  margin-top: 30px;
-  font-size: 14px;
-  line-height: 20px;
+  margin-top: 1.875rem;
+  font-size: 0.875rem;
+  line-height: 1.25rem;
 }
 .hero-section__right {
   display: flex;
   margin: 0;
-  width: 50%;
+  max-width: 50%;
+  min-width: 25rem;
   padding: 0.75rem 0;
-  overflow: hidden;
   position: relative;
+  min-height: 33.27rem;
+  max-height: -webkit-fit-content;
+  max-height: -moz-fit-content;
+  max-height: fit-content;
 }
 .hero-section__img {
-  height: 22.25rem;
+  max-height: 22.25rem;
   display: block;
   margin: auto;
   position: absolute;
@@ -247,8 +312,8 @@ header {
   color: #335576;
   display: inline-block;
   line-height: 3.27rem;
-  font-size: 21.75px;
-  margin-top: 35px;
+  font-size: 1.359rem;
+  margin-top: 2.188rem;
 }
 
 .reco-card-container {
@@ -260,12 +325,12 @@ header {
 .reco-card {
   width: 15.9rem;
   height: 23.5rem;
-  border-radius: 5px;
-  box-shadow: 4px 0px 4px rgba(0, 0, 0, 0.2);
+  border-radius: 0.313rem;
+  box-shadow: 0.25rem 0 0.25rem rgba(0, 0, 0, 0.2);
   margin: 0 1.3vw 5rem 1.3vw;
   overflow: hidden;
   position: relative;
-  border: 1px solid rgba(0, 0, 0, 0.2);
+  border: 0.063rem solid rgba(0, 0, 0, 0.2);
 }
 .reco-card__img {
   height: 100%;
@@ -274,7 +339,7 @@ header {
 .reco-card__title {
   color: #fefaf5;
   position: absolute;
-  bottom: 16px;
-  right: 16px;
+  bottom: 1rem;
+  right: 1rem;
   margin: 0;
 }/*# sourceMappingURL=main.css.map */
